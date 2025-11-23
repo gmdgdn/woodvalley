@@ -1,0 +1,45 @@
+import {
+  Layers,
+  Mail,
+  Phone,
+  Thermometer,
+  Dumbbell,
+  Coins,
+  Ship,
+  Truck,
+  MapPin,
+  Star,
+  Linkedin,
+  Facebook,
+  Youtube,
+  Menu,
+  ArrowRight,
+  PlayCircle,
+  Check,
+  ChevronDown,
+  Warehouse
+} from 'lucide-react';
+
+export const Icons = {
+  layers: Layers,
+  mail: Mail,
+  phone: Phone,
+  thermometer: Thermometer,
+  dumbbell: Dumbbell,
+  coins: Coins,
+  ship: Ship,
+  truck: Truck,
+  mapPin: MapPin,
+  star: Star,
+  linkedin: Linkedin,
+  facebook: Facebook,
+  youtube: Youtube,
+  menu: Menu,
+  arrowRight: ArrowRight,
+  playCircle: PlayCircle,
+  check: Check,
+  chevronDown: ChevronDown,
+  warehouse: Warehouse,
+};
+
+export type IconName = keyof typeof Icons;
