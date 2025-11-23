@@ -32,22 +32,22 @@ export const Footer = () => {
           <ul className="space-y-2">
             <li>
               <a href="#products" className="hover:text-safety-500 transition">
-                Standard Pine Pallets
+                WV-STD (Standard)
               </a>
             </li>
             <li>
               <a href="#products" className="hover:text-safety-500 transition">
-                Steel Reinforced (C-Channel)
+                WV-PRO (Professional)
               </a>
             </li>
             <li>
               <a href="#products" className="hover:text-safety-500 transition">
-                Heavy Duty Leg Pallets
+                WV-HD (Heavy Duty)
               </a>
             </li>
             <li>
               <a href="#contact" className="hover:text-safety-500 transition">
-                Custom Sizes
+                Custom Sizes & Quotes
               </a>
             </li>
           </ul>

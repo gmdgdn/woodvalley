@@ -5,18 +5,29 @@ const testimonials = [
   {
     rating: 5,
     quote:
-      'We used to import pallets from China, but the waiting time was killing our production schedule. Wood Valley delivered high-quality steel-reinforced pallets to Riyadh in just 10 days. The durability in the heat is impressive.',
-    author: 'Eng. Mohammed Al-Otaibi',
-    position: 'Production Manager, Riyadh Blocks Co.',
-    initials: 'MA',
+      'The heat in Riyadh usually bends wooden pallets in a month. Wood Valley\'s oil-treated pallets have been running for a year with zero warping. They saved us a fortune compared to plastic.',
+    author: 'Eng. Faisal Al-Harbi',
+    position: 'Production Manager',
+    company: 'Saudi Arabia 🇸🇦',
+    initials: 'FA',
   },
   {
     rating: 5,
     quote:
-      'The issue with plastic pallets was the cost. Wood Valley gave us a solution that fits our budget but is much stronger than local carpentry work. The oil treatment really helps with the humidity here in Lagos.',
-    author: 'Chinedu Johnson',
-    position: 'Owner, Solid Rock Construction, Nigeria',
-    initials: 'CJ',
+      'Shipping from China became too expensive and slow. We switched to Wood Valley. Better quality, steel edges are stronger, and the shipment arrived in Lagos in half the time.',
+    author: 'Mr. Okafor',
+    position: 'CEO, Solid Block Industries',
+    company: 'Nigeria 🇳🇬',
+    initials: 'MO',
+  },
+  {
+    rating: 5,
+    quote:
+      'Finally, an Egyptian product that beats European standards. The vibration transfer on these pallets makes our interlocks much smoother.',
+    author: 'Ahmed Hassan',
+    position: 'Technical Manager',
+    company: 'Al-Amal Construction Materials, Egypt 🇪🇬',
+    initials: 'AH',
   },
 ];
 
@@ -56,6 +67,7 @@ export const Testimonials = () => {
                   <div>
                     <h4 className="font-bold text-wood-900">{testimonial.author}</h4>
                     <p className="text-xs text-gray-500 uppercase">{testimonial.position}</p>
+                    <p className="text-sm text-gray-600 mt-1">{testimonial.company}</p>
                   </div>
                 </div>
               </div>

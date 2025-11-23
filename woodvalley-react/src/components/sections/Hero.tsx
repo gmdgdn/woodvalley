@@ -57,10 +57,12 @@ export const Hero = () => {
 
           <div ref={ref3} className="reveal mb-10">
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl leading-relaxed font-medium">
-              Heavy-duty wooden pallets <span className="text-safety-400 font-bold">reinforced with steel</span>.
-              Designed to withstand the <span className="text-accent-cyan font-bold">Gulf heat</span> and
-              <span className="text-accent-teal font-bold"> African humidity</span>.
-              The <span className="gradient-text font-bold">cost-effective alternative</span> to plastic.
+              Engineered Wooden Pallets for <span className="text-safety-400 font-bold">Concrete Block Machines</span>.
+              Reinforced with <span className="text-accent-cyan font-bold">Steel</span>.
+              Treated for <span className="text-accent-teal font-bold">Extreme Climates</span>.
+            </p>
+            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mt-4 font-medium">
+              Stop replacing warped boards. Get the <span className="gradient-text font-bold">durability of steel</span> and the economy of wood—shipped faster than China.
             </p>
           </div>
 
@@ -73,7 +75,7 @@ export const Hero = () => {
             >
               <a href="#contact" className="font-display uppercase tracking-wider flex items-center gap-3">
                 <Icons.mail className="w-6 h-6 group-hover:animate-bounce-horizontal" />
-                Request Catalog
+                GET A CUSTOM QUOTE
                 <Icons.arrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
               </a>
             </Button>
@@ -86,28 +88,24 @@ export const Hero = () => {
             >
               <a href="#products" className="flex items-center gap-3">
                 <Icons.playCircle className="w-6 h-6 group-hover:text-safety-500 group-hover:scale-125 transition-all" />
-                See It In Action
+                DOWNLOAD CATALOG PDF
               </a>
             </Button>
           </div>
 
           {/* Trust Indicators */}
-          <div ref={ref4} className="reveal mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl">
-            <div className="glass rounded-2xl p-4 text-center backdrop-blur-md border-2 border-white/20 hover:border-safety-500/50 transition-all">
-              <div className="text-4xl font-display font-bold gradient-text">15+</div>
-              <div className="text-xs uppercase tracking-wider text-gray-300 mt-1">Years</div>
+          <div ref={ref4} className="reveal mt-16 grid grid-cols-3 gap-4 max-w-2xl text-sm">
+            <div className="flex items-center gap-2 text-gray-200">
+              <Icons.check className="w-5 h-5 text-safety-400 flex-shrink-0" />
+              <span className="font-medium">Made in Egypt</span>
             </div>
-            <div className="glass rounded-2xl p-4 text-center backdrop-blur-md border-2 border-white/20 hover:border-safety-500/50 transition-all">
-              <div className="text-4xl font-display font-bold gradient-text">500k+</div>
-              <div className="text-xs uppercase tracking-wider text-gray-300 mt-1">Pallets</div>
+            <div className="flex items-center gap-2 text-gray-200">
+              <Icons.check className="w-5 h-5 text-safety-400 flex-shrink-0" />
+              <span className="font-medium">European Technical Specs</span>
             </div>
-            <div className="glass rounded-2xl p-4 text-center backdrop-blur-md border-2 border-white/20 hover:border-safety-500/50 transition-all">
-              <div className="text-4xl font-display font-bold gradient-text">700+</div>
-              <div className="text-xs uppercase tracking-wider text-gray-300 mt-1">Factories</div>
-            </div>
-            <div className="glass rounded-2xl p-4 text-center backdrop-blur-md border-2 border-white/20 hover:border-safety-500/50 transition-all">
-              <div className="text-4xl font-display font-bold gradient-text">100%</div>
-              <div className="text-xs uppercase tracking-wider text-gray-300 mt-1">Quality</div>
+            <div className="flex items-center gap-2 text-gray-200">
+              <Icons.check className="w-5 h-5 text-safety-400 flex-shrink-0" />
+              <span className="font-medium">Serving 700+ Factories</span>
             </div>
           </div>
         </div>

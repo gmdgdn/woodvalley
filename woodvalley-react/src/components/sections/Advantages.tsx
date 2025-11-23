@@ -4,21 +4,27 @@ import { Icons } from '@/components/ui/icon';
 const advantages = [
   {
     icon: Icons.thermometer,
-    title: 'Climate Resistant',
+    title: 'Heat & Humidity Proof',
+    subtitle: 'THE CLIMATE PROBLEM',
     description:
-      'Kiln-dried pine wood treated with specialized oils to resist the extreme heat of the Gulf and humidity of Africa without warping.',
+      'The Gulf sun and African humidity destroy standard wood. Our pallets are Kiln-Dried to 12-15% moisture content and Oil-Dipped to prevent water absorption, rot, and swelling.',
+    benefit: 'Zero warping. Flat blocks every time.',
   },
   {
     icon: Icons.dumbbell,
-    title: 'Steel Reinforcement',
+    title: 'Steel-Clad Strength',
+    subtitle: 'THE DURABILITY PROBLEM',
     description:
-      'Galvanized C-Channel steel profiles protect edges and increase load-bearing capacity, ensuring compatibility with sensors.',
+      'High-frequency vibration shatters cheap boards. We reinforce our premium pine core with Galvanized C-Channel Steel profiles. This protects the edges from sensor damage and forklift impact.',
+    benefit: '3x Longer Lifespan than standard timber.',
   },
   {
     icon: Icons.coins,
-    title: 'Cost Efficiency',
+    title: 'The Smartest ROI',
+    subtitle: 'THE COST PROBLEM',
     description:
-      'Get European technical specifications at Egyptian prices. 40% cheaper than plastic pallets with easier repairability.',
+      'Plastic (GMT/PVC) pallets are prohibitively expensive. Cheap local carpentry breaks in weeks. Wood Valley offers the "Sweet Spot"—industrial durability at a fraction of the cost of plastic.',
+    benefit: 'Lower cost per cycle.',
   },
 ];
 
@@ -37,17 +43,17 @@ export const Advantages = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div ref={titleRef} className="text-center mb-20 reveal">
           <span className="inline-block bg-gradient-to-r from-safety-600 to-safety-500 text-white px-5 py-2 text-xs font-bold uppercase tracking-[0.3em] rounded-full mb-6 shadow-lg">
-            💪 Why Choose Us
+            🏗️ The Solution
           </span>
           <h2 className="font-display text-5xl md:text-6xl font-bold mb-6">
-            <span className="text-wood-900">ENGINEERED TO</span>{' '}
-            <span className="gradient-text">OUTLAST</span>
+            <span className="text-wood-900">ENGINEERED TO SOLVE YOUR</span>{' '}
+            <span className="gradient-text">BIGGEST HEADACHES</span>
           </h2>
           <div className="h-1.5 w-32 bg-gradient-to-r from-safety-600 via-safety-500 to-yellow-400 mx-auto rounded-full shadow-glow mb-6"></div>
           <p className="mt-4 text-steel-700 text-lg md:text-xl max-w-3xl mx-auto font-medium">
-            Why <span className="text-safety-600 font-bold">70% of factories</span> are switching back to reinforced wood.
+            In the block industry, a bad pallet means a bad block.
             <br />
-            We <span className="gradient-text font-bold">solved the warping issue</span>.
+            We fixed the <span className="gradient-text font-bold">three biggest problems</span> facing factories in the Middle East and Africa.
           </p>
         </div>
 
@@ -77,12 +83,19 @@ export const Advantages = () => {
                 </div>
 
                 {/* Content */}
+                <div className="text-xs font-bold uppercase tracking-widest text-safety-600 mb-2">
+                  {advantage.subtitle}
+                </div>
                 <h3 className="font-display text-2xl font-bold mb-4 text-wood-900 group-hover:text-safety-600 transition-colors">
                   {advantage.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed font-medium">
+                <p className="text-gray-700 leading-relaxed font-medium mb-4">
                   {advantage.description}
                 </p>
+                <div className="flex items-start gap-2 mt-4 p-3 bg-gradient-to-r from-safety-50 to-yellow-50 rounded-lg border-l-4 border-safety-500">
+                  <Icons.check className="w-5 h-5 text-safety-600 flex-shrink-0 mt-0.5" />
+                  <p className="text-sm font-bold text-wood-900">{advantage.benefit}</p>
+                </div>
 
                 {/* Decorative Corner */}
                 <div className={`absolute bottom-4 right-4 w-16 h-16 bg-gradient-to-br ${gradientClass} opacity-10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-500`}></div>

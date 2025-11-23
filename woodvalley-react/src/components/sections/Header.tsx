@@ -31,7 +31,7 @@ export const Header = () => {
               WOOD VALLEY
             </h1>
             <span className="text-[10px] tracking-widest uppercase font-bold text-steel-500">
-              Industrial Solutions
+              Engineered Pallets
             </span>
           </div>
         </a>

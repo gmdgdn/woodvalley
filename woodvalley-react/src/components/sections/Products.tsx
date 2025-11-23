@@ -4,27 +4,30 @@ import { Icons } from '@/components/ui/icon';
 
 const products = [
   {
-    model: 'WV-ECO',
-    name: 'Standard Pine',
-    description: 'Ideal for manual and semi-automatic machines. High quality dried pine with tongue & groove joints.',
+    model: 'WV-STD',
+    name: 'The Standard',
+    subtitle: 'Best For: Manual & Semi-Automatic Machines / Egg-Layers',
+    description: 'The budget-friendly upgrade from raw timber. 30mm - 40mm thickness. Treated Pine. No steel edges.',
     image: 'https://images.unsplash.com/photo-1616422285623-13ff0162193c?auto=format&fit=crop&q=80&w=800',
-    features: ['Thickness: 30mm - 40mm', 'Oil Dipped Surface', 'Finger Jointed Boards'],
+    features: ['30mm - 40mm Thickness', 'Kiln-Dried Treated Pine', 'Oil Dipped Surface', 'Finger Jointed Boards'],
     isFeatured: false,
   },
   {
-    model: 'WV-STEEL',
-    name: 'Steel Reinforced (C-Profile)',
-    description: 'The ultimate solution for fully automatic lines. Steel C-channels protect ends and prevent sensor errors.',
+    model: 'WV-PRO',
+    name: 'The Professional',
+    subtitle: 'Best For: Fully Automatic Lines (Masa, Zenith, QGM, Hess)',
+    description: 'Essential for robot handling and sensor detection. The industry standard for high-volume plants.',
     image: 'https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=800',
-    features: ['Thickness: 40mm - 55mm', 'Galvanized Steel Ends', 'Vibration Optimized'],
+    features: ['40mm - 55mm Thickness', 'Full C-Channel Steel Edges', 'Galvanized & Rust Resistant', 'Vibration Optimized'],
     isFeatured: true,
   },
   {
     model: 'WV-HD',
-    name: 'Heavy Duty Legs',
-    description: 'Designed for specific block machines requiring elevated pallets. Reinforced with steel pipe legs.',
+    name: 'The Heavy Duty',
+    subtitle: 'Best For: Heavy Curbstones, Paving Stones & Special Machines',
+    description: 'Maximum load bearing. Designed for machines requiring elevated curing.',
     image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800',
-    features: ['Custom Leg Height', 'Steel Rod Integration', 'Max Load: 500kg+'],
+    features: ['Custom Thickness', 'Steel Pipe Legs/Feet Included', 'Steel Rod Integration', 'Max Load: 500kg+'],
     isFeatured: false,
   },
 ];
@@ -113,9 +116,12 @@ export const Products = () => {
                 </div>
 
                 {/* Content */}
-                <h3 className="font-display text-3xl font-bold mb-3 group-hover:text-safety-400 transition-colors">
+                <h3 className="font-display text-3xl font-bold mb-2 group-hover:text-safety-400 transition-colors">
                   {product.name}
                 </h3>
+                <p className="text-safety-300 text-xs font-bold uppercase tracking-wider mb-4">
+                  {product.subtitle}
+                </p>
                 <p className="text-gray-300 text-sm mb-6 leading-relaxed">
                   {product.description}
                 </p>

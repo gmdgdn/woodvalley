@@ -6,12 +6,17 @@ const routes = [
   {
     icon: Icons.ship,
     title: 'To Gulf (KSA/UAE/Qatar)',
-    description: '5-7 Days Transit Time via Red Sea.',
+    description: '5-7 Days Transit Time via Red Sea. Half the time of China.',
   },
   {
     icon: Icons.truck,
     title: 'To Africa (Libya/Sudan/Nigeria)',
-    description: 'Direct land routes and fast sea freight.',
+    description: 'Direct land routes and fast sea freight. No container delays.',
+  },
+  {
+    icon: Icons.warehouse,
+    title: 'Egypt Location Advantage',
+    description: 'Gateway between Africa & Middle East. Lower shipping costs.',
   },
 ];
 
@@ -32,7 +37,7 @@ export const GlobalReach = () => {
             LOWER SHIPPING COSTS.
           </h2>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            Located in Egypt, the gateway between Africa and the Middle East, Wood Valley offers significantly shorter lead times than Asian competitors.
+            Located in <span className="font-bold text-wood-900">Egypt</span>, the gateway between Africa and the Middle East, Wood Valley offers <span className="font-bold text-safety-600">significantly shorter lead times</span> and <span className="font-bold text-safety-600">lower shipping costs</span> than Chinese competitors. Our proximity to your factory means faster replenishment and better cash flow.
           </p>
           <div className="space-y-4">
             {routes.map((route, index) => {
